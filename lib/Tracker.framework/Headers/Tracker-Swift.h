@@ -210,13 +210,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) TrackerManag
 /// 配置SDK基本信息,SDK初始化
 /// \param config TrackerConfiguration对象
 ///
-- (void)setupWithConfig:(TrackerConfiguration * _Nonnull)config;
+- (void)setupWithConfig:(TrackerConfiguration * _Nonnull)config SWIFT_AVAILABILITY(ios,introduced=9.0);
 /// 上传用户自定事件
 /// \param name 事件名
 ///
 /// \param variable 自定义参数,类型字典
 ///
-- (void)userTrickWithName:(NSString * _Nonnull)name variable:(NSDictionary<NSString *, id> * _Nonnull)variable;
+- (void)userTrickWithName:(NSString * _Nonnull)name variable:(NSDictionary<NSString *, id> * _Nonnull)variable SWIFT_AVAILABILITY(ios,introduced=9.0);
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end

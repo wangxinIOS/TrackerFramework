@@ -191,8 +191,6 @@ SWIFT_CLASS("_TtC7Tracker20TrackerConfiguration")
 @property (nonatomic) BOOL testMode;
 /// 用户ID 必须设置，default: “”
 @property (nonatomic, copy) NSString * _Nonnull appId;
-/// 渠道 非必须设置，default: “”
-@property (nonatomic, copy) NSString * _Nonnull channel;
 /// 定时上传间隔（秒） testMode=false时有效 default:20,
 @property (nonatomic) NSInteger duration;
 /// 定时上传时，每次上传的最大数量 testMode=false时有效 default:50
